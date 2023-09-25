@@ -1,16 +1,25 @@
 {
-  "name": "next-react",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "13.4.19",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  }
+	"name": "next-react",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3002",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"mongodb": "^6.1.0",
+		"net": "^1.0.2",
+		"next": "13.4.19",
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
+	},
+	"browser": {
+		"child_process": false,
+		"fs": false,
+		"path": false,
+		"os": false,
+    "tls":false
+	}
 }
